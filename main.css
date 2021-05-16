@@ -24,7 +24,7 @@ body {
 .text {
   font-size: 1.5em;
   width: 250px;
-  margin: 5px auto 0 auto;
+  margin: 5px auto 20px auto;
   letter-spacing: 1px; 
   text-align: left;
 }
@@ -58,11 +58,31 @@ li {
   border: 1px solid #333;
   box-sizing: border-box;
   cursor: hand;
-  /* background-color: lightgray; */
   background-color: #333;
   color: white;
 }
-/* .button:hover {
-  background-color: #333;
-  color: white;
-} */
+
+.animated {
+  animation: flash 1s;
+}
+@keyframes flash {
+  0% {
+    background-color: whitesmoke;
+  }
+  40% {
+    background-color: #333;
+  }
+  100% {
+    background-color: whitesmoke;
+  }
+}
+
+.noselect {
+  -webkit-touch-callout: none; /* iOS Safari */
+    -webkit-user-select: none; /* Safari */
+     -khtml-user-select: none; /* Konqueror HTML */
+       -moz-user-select: none; /* Firefox */
+        -ms-user-select: none; /* Internet Explorer/Edge */
+            user-select: none; /* Non-prefixed version, currently
+                                  supported by Chrome and Opera */
+}
