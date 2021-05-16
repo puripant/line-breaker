@@ -2,9 +2,18 @@ body {
   margin: 0;
   margin-top: 15px;
   background-color: whitesmoke;
-  display: block;
   font-family: sans-serif;
   font-size: 10px;
+}
+
+.wrapper {
+  margin: 0 auto;
+  max-width: 640px;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  align-items: flex-start;
+  align-content: flex-start;
 }
 
 .title {
@@ -24,20 +33,24 @@ body {
 .text {
   font-size: 1.5em;
   width: 250px;
-  margin: 5px auto 20px auto;
+  margin: 5px auto 5px auto;
   letter-spacing: 1px; 
   text-align: left;
 }
-ol { 
+ol {
+  margin: 0;
   padding-left: 1.6em;
 }
 li { 
   margin-bottom: 1em;
 }
+li:last-child{
+  margin-bottom: 0;
+}
 
 #box {
   width: 250px;
-  margin: 20px auto;
+  margin: 20px auto 0 auto;
   resize: none;
 }
 #box textarea {
@@ -49,7 +62,7 @@ li {
 }
 .button {
   width: 250px;
-  margin: 20px auto;
+  margin: 20px auto 0 auto;
   font-size: 2em;
   line-height: 2em;
   text-transform: uppercase;
